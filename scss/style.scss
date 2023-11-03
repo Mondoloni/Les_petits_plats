@@ -1,0 +1,307 @@
+@import "./variables_overrides";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.accordion{
+    z-index: 1;
+    margin-right: 66px;
+}
+
+.accordion-item
+{
+    width: 195px;
+}
+.accordion-button {
+    margin-right: 66px; 
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion-body {
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input-group{
+    color:#000;
+    stroke: #7A7A7A;
+    width:163px;
+    margin-left:16px;
+    margin-right: 16px;
+   
+}
+
+.form-control{
+    background:transparent url(../assets/icons/Search-mini.jpg) no-repeat scroll ;
+    background-position:90%;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 35px 9px 8px;
+    margin:14px 0px 11px 16px;
+    border-radius: 0px;
+    border-color: #C6C6C6 ;
+}
+
+
+.form-control:focus {
+    border-color: #C6C6C6 ;
+    box-shadow: 0 0 0px;
+  }
+
+label{
+  display: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: auto;
+    width:1440px;
+    background-color: #000;
+}
+
+.header-section{
+    width:1440px;
+    height: 667px;
+    background-image: url('/assets/fond/backgroud_header.jpg');
+    display: flex;
+    flex-direction: column;
+    & h1{
+        color:  #FFD15B;
+        text-align: center;
+        font-family: Anton;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width:675px;
+        height:132px;
+        margin:165px 440px 30px 380px;
+    }
+}
+.header-img-titre{
+    width: 180px;
+    height: 25px;
+    margin-left: 69px;
+    margin-top: 50px;
+}
+
+.header-img-rond{
+        width: 22px;
+        height: 21px;
+        margin-top: 50px;
+    }
+
+.header-search{
+    display: flex;
+    width: 954px;
+    height: 72px;
+    border-radius: 11px;
+    background: #FFF;
+    margin:0px 243px 0px 243px;
+    align-content: center;
+    justify-content: space-between;
+}
+.header-search-input{
+    width: 500px;
+    height: 22px;
+    border-radius: 11px;
+    color:  #7A7A7A;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:24px 0px 26px 35px;
+    border:transparent; 
+  
+}
+.header-search-input:focus{
+    outline: none;
+    
+}
+.header-search-glass{
+        width: 51px;
+        height: 52px;
+        /* position: relative; */
+        /* top:0px; */
+        /* left:500px; */
+        margin:10px 10px 0px 250px;
+    
+}
+.header-search-glass:hover{
+            content: url('/assets/icons/search-magnifying-glass-yelow.jpg') ;
+            cursor: pointer;
+       
+        }
+    
+
+
+.main{
+    background-color: #EDEDED;;
+    width:1440px;
+    /* height:300px; */
+}
+
+.section-tag{
+    
+    width:100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 104px;
+    margin-right: 102px;
+    padding-top: 25px;
+    /* position: relative; */
+    /* display: inline-block; */
+    & h3{
+
+        margin-left:23%;
+        font-family: Anton;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
+.select-tag{
+  
+    border-radius: 11px;
+    background: #FFF;
+    display: inline-flex;
+    padding: 17px 16px;
+    align-items: center;
+    margin-right:66px;
+    border: transparent;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section-recettes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 104px;
+    margin-top: 55px;
+}
+
+.card-recettes{
+    width:380px;
+    border-radius: 21px;
+    margin-right: 50px;
+    margin-bottom: 65px;
+    padding-bottom: 60px;
+    background: #FFF;
+    box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+
+    & h2{
+        color: #000;
+        font-family: Anton;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin:17px 0px 0px 25px;
+    }
+    & h3{
+        color: #7A7A7A;
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        text-transform: uppercase; 
+        margin:30px 0px 15px 25px;
+    }
+    & h4{
+        color:  #1B1B1B;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    & h5{
+        color: #7A7A7A;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+   
+}
+
+.card-recettes-img{
+    & img{
+        width: 380px;
+        height: 253px;
+        object-fit: cover;
+        border-radius: 21px 21px 0px 0px;
+        background: #FFF;
+        box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+    }
+  
+}
+.card-recettes-img-time{
+    position: relative;
+    top:-240px;
+    right:-295px;
+    width:63px;
+    height: 26px;
+    display: inline-flex;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 14px;
+    background: #FFD15B;
+   
+    & h3{
+        color:  #1B1B1B;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin:0px;
+        
+    }
+}
+.card-recettes-ingredients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:25px;
+    margin-right:30px;
+    & div{
+        width:50%;
+        margin-top: 12px;
+        margin-bottom:12px ;
+        & h4{
+            margin:0px;
+        }
+        & h5{
+            margin:0px;
+        }
+    }
+}
+  

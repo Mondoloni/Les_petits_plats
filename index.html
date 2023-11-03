@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <link href="./css/style.css" rel="stylesheet" type="text/css" > -->
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!-- <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link href="https : //fonts.googleapis.com/css2?family= Manrope :wght@500 & family= Shrikhand & display=swap" rel="stylesheet"><title>Les petits plats</title> -->
+    <title>Les petits plats </title>
+  </head>
+  <body>
+    <header>
+      <section class="header-section">
+        <div>
+          <img src="./assets/icons/les_petits_plats.jpg" class="header-img-titre" alt="logo_les_petits_plats">
+          <img src="./assets/icons/header-rond.jpg" class="header-img-rond" alt="logo_rond">
+        </div>
+        <h1>CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN,SIMPLES ET DÉLICIEUSES</h1>
+       <div class="header-search">
+          <label for="header-search-input">ok</label>
+            <input name="header-search-input" id="header-search-input" type="text" class="header-search-input" placeholder="Rechercher une recette, un ingrédient, ..." size="80" tabindex="1"/>
+          <img src="/assets/icons/search-magnifying-glass.jpg" class="header-search-glass"  alt="logo_loupe">
+       </div>
+      </section >
+    </header>
+    <main id="main" class="main">
+        <section class="section-tag">
+              <div class="accordion" id="accordionIngredients">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingIngredients">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIngredients" aria-expanded="true" aria-controls="collapseIngredients">
+                     Ingrédients
+                    </button>
+                  </h2>                
+                  <div id="collapseIngredients" class="accordion-collapse collapse" aria-labelledby="headingIngredients" data-bs-parent="#accordionIngredients">
+                    <div class="input-group">
+                      <label for="search-ingredients">Recherche par ingrédients</label>
+                      <input type="search" class="form-control" placeholder="" id="search-ingredients">
+                    </div>
+                    <div class="accordion-body">Jus de citron</div>
+                    <div class="accordion-body">Glaçons</div>
+                    <div class="accordion-body">Tomate</div>
+                    <div class="accordion-body">Poulet</div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="accordion" id="accordionAppareils">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingAppareils">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAppareils" aria-expanded="true" aria-controls="collapseAppareils">
+                      Appareils
+                    </button>
+                  </h2>                
+                  <div id="collapseAppareils" class="accordion-collapse collapse" aria-labelledby="headingAppareils" data-bs-parent="#accordionAppareils">
+                    <div class="input-group">
+                      <label for="search-appareils">Recherche par appareils</label>
+                      <input type="search" class="form-control" placeholder="" id="search-appareils">
+                    </div>
+                    <div class="accordion-body">Cocotte</div>
+                    <div class="accordion-body">Cuiseur de riz</div>
+                    <div class="accordion-body">Four</div>
+                    <div class="accordion-body">Saladier</div>
+                  </div>
+                </div>              
+              </div>
+         
+              <div class="accordion" id="accordionUstensiles">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingUstensiles">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUstensiles" aria-expanded="true" aria-controls="collapseUstensiles">
+                      Ustensiles
+                    </button>
+                  </h2>                
+                  <div id="collapseUstensiles" class="accordion-collapse collapse" aria-labelledby="headingUstensiles" data-bs-parent="#accordionUstensiles">
+                    <div class="input-group">
+                      <label for="search-ustensiles">Recherche par Ustensiles</label>
+                      <input type="search" class="form-control" placeholder="" id="search-ustensiles">
+                    </div>
+                    <div class="accordion-body">Cuillère à Soupe</div>
+                    <div class="accordion-body">Verres</div>
+                    <div class="accordion-body">Presse citron</div>
+                    <div class="accordion-body">Couteau</div>
+                  </div>
+                </div>              
+              </div>
+
+            <h3>1500 Recettes</h3>
+        </section>
+        <section class="section-recettes">
+          <div class="card-recettes">
+            <div class="card-recettes-img">
+              <img src="/assets/recettes/Recette01.jpg" alt="titre_photo">
+              <div class="card-recettes-img-time">
+                <h3>10min</h3>
+              </div>
+            </div>
+            <h2>Limonade de Coco</h2>
+            <h3>RECETTE</h3>
+            <h4>Mettre les glaçons à votre goût dans le blender, Ajouter le lait  la crème de coco, le jus de 2 citrons et le sucre ensemble. Mixer jusqu'à obtenir la consistance désirée</h4>
+            <h3>Ingrédients</h3>
+            <div class="card-recettes-ingredients">
+              <div>
+                <h4>Lait de coco</h4>
+                <h5>400ml</h5>
+              </div>
+              <div>
+                <h4>Jus de citron</h4>
+                <h5>2</h5>
+              </div>
+              <div>
+                <h4>Créme de coco</h4>
+                <h5>4 cuillères</h5>
+              </div>
+              <div>
+                <h4>Sucre</h4>
+                <h5>20g</h5>
+              </div>
+              <div>
+                <h4>Glaçons</h4>
+                <h5>2</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-recettes">
+            <div class="card-recettes-img">
+              <img src="/assets/recettes/Recette02.jpg" alt="titre_photo">
+              <div class="card-recettes-img-time">
+                <h3>60min</h3>
+              </div>
+            </div>
+            <h2>Poisson Cru à la tahitienne</h2>
+            <h3>RECETTE</h3>
+            <h4>Découper le thon en dés, le mettre dans un plat et le recouvrir de jus de citron vert (mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins 2 heures.</h4>
+            <h3>Ingrédients</h3>
+            <div class="card-recettes-ingredients">
+              <div>
+                <h4>Thon Rouge (ou blanc)</h4>
+                <h5>200g</h5>
+              </div>
+              <div>
+                <h4>Concombre</h4>
+                <h5>1</h5>
+              </div>
+              <div>
+                <h4>Tomate</h4>
+                <h5>2</h5>
+              </div>
+              <div>
+                <h4>Carotte</h4>
+                <h5>1</h5>
+              </div>
+              <div>
+                <h4>Citron vert</h4>
+                <h5>5</h5>
+              </div>
+              <div>
+                <h4>Lait de coco</h4>
+                <h5>100ml</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-recettes">
+            <div class="card-recettes-img">
+              <img src="/assets/recettes/Recette03.jpg" alt="titre_photo">
+              <div class="card-recettes-img-time">
+                <h3>80min</h3>
+              </div>
+            </div>
+            <h2>Poulet coco réunionnais</h2>
+            <h3>RECETTE</h3>
+            <h4>Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'huile d'olive. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de </h4>
+            <h3>Ingrédients</h3>
+            <div class="card-recettes-ingredients">
+              <div>
+                <h4>Poulet</h4>
+                <h5>1</h5>
+              </div>
+              <div>
+                <h4>Lait de coco</h4>
+                <h5>400ms</h5>
+              </div>
+              <div>
+                <h4>Coulis de tomate</h4>
+                <h5>25cl</h5>
+              </div>
+              <div>
+                <h4>Oignon</h4>
+                <h5>1</h5>
+              </div>
+              <div>
+                <h4>Poivron rouge</h4>
+                <h5>1</h5>
+              </div>
+              <div>
+                <h4>Huile d'olive</h4>
+                <h5>1 cuillère à soupe</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-recettes">
+            <div class="card-recettes-img">
+              <img src="/assets/recettes/Recette04.jpg" alt="titre_photo">
+              <div class="card-recettes-img-time">
+                <h3>50min</h3>
+              </div>
+            </div>
+            <h2>Salade de riz</h2>
+            <h3>RECETTE</h3>
+            <h4>Faire cuire le riz. Une fois le riz cuit, le laisser refroidir. Couper les oeufs dur en quarts ou en lamelle au choix, coupez le tomates en dés, ajouter au riz les oeufs, les tomates, le poisson, le maïs et</h4>
+            <h3>Ingrédients</h3>
+            <div class="card-recettes-ingredients">
+              <div>
+                <h4>Riz blanc</h4>
+                <h5>200grammes</h5>
+              </div>
+              <div>
+                <h4>Thon en miettes</h4>
+                <h5>200grammes</h5>
+              </div>
+              <div>
+                <h4>Tomate</h4>
+                <h5>2</h5>
+              </div>
+              <div>
+                <h4>Oeuf dur</h4>
+                <h5>2</h5>
+              </div>
+              <div>
+                <h4>Mais</h4>
+                <h5>300grammes</h5>
+              </div>
+              <div>
+                <h4>Vinaiges</h4>
+                <h5>5cl</h5>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
