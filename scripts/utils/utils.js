@@ -1,7 +1,6 @@
 //Fonction tri
 function tri(maRecherche)
 {
-    // console.log(recipes)
     // let tabDonnees=[];
 if(maRecherche==="")
 {
