@@ -3,7 +3,7 @@
 
 function displayDropdown(nomDropdown,tabData)
 {
-    const div_dropdown=document.getElementById(`input-group-${nomDropdown}`);
+    // const div_dropdown=document.getElementById(`input-group-${nomDropdown}`);
     const div_collapse=document.getElementById(`collapse${nomDropdown}`);
     const input_search=document.getElementById(`search-${nomDropdown}`);
 // Sélection de la div avec la classe "input-group"
@@ -39,7 +39,11 @@ tabData.forEach((element) =>
 
 //On ajoute un évenement, lors de la modification du champ de recherche
 //On lance la fonction updateDropdown
-    input_search.setAttribute("oninput",`updateDropdown("${nomDropdown}")`);
+    // input_search.setAttribute("oninput",`updateDropdown("${nomDropdown}")`);
+
+    input_search.addEventListener("input", (e) => {
+        updateDropdown(nomDropdown,e.currentTarget.value);
+     });
   
     return true;
 }
@@ -87,12 +91,9 @@ function ajoutTag(nomTag)
     //Lancer la fonction Tri
 }
 
-function suppressionTag()
-{
 
-}
 //la fonction permet de mettre à jour les éléments des dropdows (ingredients, appareils, ustensiles)
-function updateDropdown(nomDropdown)
+function updateDropdown(nomDropdown,laRecherche)
 {
     const div_dropdown=document.getElementById(`input-group-${nomDropdown}`);
     // const div_dropdown=document.querySelectorAll(`div[data-${nomDropdown}]`);
@@ -101,10 +102,10 @@ function updateDropdown(nomDropdown)
     const input_search=document.getElementById(`search-${nomDropdown}`).value;
 // Sélection de la div avec la classe "input-group"
 
-
 input_accordion.forEach(function(element) {
 
-  if(element.innerText.toLowerCase().includes(input_search.toLowerCase()))
+//   if(element.innerText.toLowerCase().includes(input_search.toLowerCase()))
+  if(element.innerText.toLowerCase().includes(laRecherche.toLowerCase()))
   {
     element.classList.remove('is-hidden');
     } 

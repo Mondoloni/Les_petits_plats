@@ -1,4 +1,4 @@
-function displayRecipes(dataRecipes) {
+function displayRecipes(dataRecipes,maRecherche) {
     const tabIngredients=[];
     const tabUstensiles=[];
     const tabAppareils=[];
@@ -39,19 +39,37 @@ function displayRecipes(dataRecipes) {
         }
         
     });
-
+// console.log(tabIngredients.length)
+if(maRecherche===undefined)
+{
     displayDropdown("Ingredients",tabIngredients);
     displayDropdown("Appareils",tabAppareils);
     displayDropdown("Ustensiles",tabUstensiles);
-
+}
+else{
+    updateDropdown("Ingredients",maRecherche);
+    updateDropdown("Appareils",maRecherche);
+    updateDropdown("Ustensiles",maRecherche);
+}
     const h3_total_recettes=document.getElementById("totalRecettes");
     h3_total_recettes.textContent=dataRecipes.length+" Recettes";
 }
 
 function init() {
     
+    const input_header_search=document.getElementById("header-search-input");
+    input_header_search.addEventListener("input", (e) => {
+       if(e.currentTarget.value.length>2)
+       {
+        tri(e.currentTarget.value)
+       }
+       else
+       {
+        tri("");
+       }
+    });
 
-     displayRecipes(recipes);
+    displayRecipes(recipes);
  }
 
 init();
