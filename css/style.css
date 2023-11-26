@@ -11676,3 +11676,13 @@ body {
 .card-recettes-ingredients div h5, .card-recettes-ingredients div .h5 {
   margin: 0px;
 }
+
+.no-recipes {
+  width: 100%;
+  color: #000;
+  font-family: Anton;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
